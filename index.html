@@ -1,12 +1,71 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--зачем эта строка?-->
     <title>HTML Academy: Девайс</title>
   </head>
+
   <body>
+    <header class="page-header">
+      <a class="header-logo"></a>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+      <form class="header-search" action="" method="get">
+        <input name="search" placeholder="Поиск по сайту" type="search">
+        <button type="submit">Найти</button>
+      </form>
 
+      <ul class="account-list">
+        <li class="account-item">
+          <a class="login" href="">Войти</a>
+        </li>
+        <li class="account-item">
+          <a class="logout hidden" href="">Выйти</a>
+        </li>
+        <li class="account-item">
+          <a class="compare" href="">Сравнить</a>
+        </li>
+        <li class="account-item">
+          <a class="cart" href="">Корзина</a>
+        </li>
+      </ul>
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="catalog" href="catalog.html">Каталог товаров</a>
+            <button type="button"></button>
+            <ul class="catalog-list visually-hidden">
+              <li class="catalot-item">Виртуальная реальность</li>
+              <li class="catalot-item">Моноподы для селфи</li>
+              <li class="catalot-item">Экшн-камеры</li>
+              <li class="catalot-item">Фитнес-браслеты</li>
+              <li class="catalot-item">Умные часы</li>
+              <li class="catalot-item">Квадрокоптеры</li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="delivery" href="blank.html">Доставка</a>
+          </li>
+          <li class="nav-item">
+            <a class="assurance" href="blank.html">Гарантия</a>
+          </li>
+          <li class="nav-item">
+            <a class="contacts" href="blank.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
   </body>
+
 </html>
