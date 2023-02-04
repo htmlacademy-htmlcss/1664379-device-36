@@ -4,19 +4,23 @@
   src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
   font-weight: 800;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "rubik-400";
   src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "rubik-700";
   src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
+
 /*Variebles*/
 :root {
   --basic-white: #FFFFFF;
@@ -32,7 +36,6 @@
   --basic-success: #08AF00;
   --basic-focus: #AF4FFF;
 }
-
 
 /*Global*/
 .visually-hidden {
@@ -50,7 +53,11 @@
 
 .page-body {
   font-family: "rubik-400", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
 }
+
+/*ПОВТОРЯЮЩИЕСЯ ЭЛЕМЕНТЫ НА ВСЕХ СТРАНИЦЫХ*/
 
 .link {
   text-decoration: none;
@@ -61,27 +68,27 @@
   list-style-type: none;
 }
 
+.button {
+  display: block;
+  font-family: "raleway-800";
+  font-size: 18px;
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+}
+
+/*ШРИФТЫ*/
+
 .main-title {
   font-family: "raleway-800";
   font-size: 50px;
   line-height: 50px;
-  color: green;
 }
 
 .title {
   font-family: "raleway-800";
   font-size: 18px;
   text-transform: uppercase;
-  color: red;
-}
-
-.button {
-  display: block;
-  font-family: "raleway-800";
-  font-size: 18px;
-  color: blue;
-  border: none;
-  background-color: transparent;
 }
 
 .rubik-title {
@@ -97,8 +104,21 @@
   line-height: 30px;
 }
 
+.cards-list {
+  font-size: 18px;
+}
+
+.cards-list .rubik-title {
+  font-size: 18px;
+  line-height: 20px;
+}
+.filter .rubik-title {
+  font-size: 18px;
+  line-height: 20px;
+}
 .products-categories-list .title{
   text-transform: none;
+  line-height: 24px;
 }
 
 .pop-up-form {
@@ -108,7 +128,21 @@
   line-height: 20px;
  }
 
+ .sort-options {
+  font-size: 18px;
+ }
+
+ .features-name {
+  font-weight: 400;
+}
+
+.features-value {
+  font-size: 36px;
+}
+
+
  /*BACKGROUND-COLORS*/
+
  .footer {
   background-color: var(--basic-dark);
  }
@@ -130,21 +164,53 @@
 .cards-list-wrapper {
   background-color: var(--basic-white);
 }
+.cart-content {
+  background-color: var(--basic-black);
+  color: var(--basic-white);
+}
+.cart-content-table {
+  background-color: #1A1A1A;
+}
+.cart-content .button{
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  font-stretch: 120%;
+}
+
+
+/*HEADER*/
+
 .header-logo {
   display: block;
   width: 145px;
   height: 36px;
 }
+
+
+
+
+
+
+
+/*MAIN*/
+
+
+/*FOOTER*/
+ .footer {
+  color: var(--basic-white);
+ }
+
+
+
+
+
+/*СОСТОЯНИЯ*/
 .header-logo:hover {
   opacity: 60%;
 }
 .header-logo:active {
   opacity: 30%;
 }
-.header-logo:focus {
-  outline: 0;
-  /*outline-offset: 0;*/
-  border: 2px solid;
-  border-color: var(--basic-focus);
+*:focus {
+  outline: solid 2px var(--basic-focus);
 }
-/*MAIN*/
