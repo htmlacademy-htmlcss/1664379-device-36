@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!--зачем эта строка?-->
-    <title>Девайс. Каталог</title>
+    <title>Каталог</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -239,7 +239,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="to-show-filter" type="submit">Показать</button>
+          <button class="button to-show-filter" type="submit">Показать</button>
         </form>
 
       </section>
@@ -261,66 +261,69 @@
 
         </div>
 
-        <ul class="list cards-list">
+        <div class="cards-list-wrapper">
+          <ul class="list cards-list">
 
-          <li class="cards-item">
-            <a class="link product-page">
-              <img class="product-img" src="img/catalog/product-1.jpg" alt="Изображение товара">
-              <p class="rubik-title product-name">Любительская селфи-палка</p>
-              <p class="product-price">500 &#8381;</p>
-            </a>
-          </li>
-          <li class="cards-item">
-            <a class="link product-page">
-              <img class="product-img" src="img/catalog/product-2.jpg" alt="Изображение товара">
-              <p class="rubik-title product-name">Профессиональная селфи-палка </p>
-              <p class="product-price">1500 &#8381;</p>
-            </a>
-          </li>
-          <li class="cards-item">
-            <a class="link product-page">
-              <img class="product-img" src="img/catalog/product-3.jpg" alt="Изображение товара">
-              <p class="rubik-title product-name">Непотопляемая селфи-палка</p>
-              <p class="product-price">2500 &#8381;</p>
-            </a>
-          </li>
-          <li class="cards-item">
-            <a class="link product-page">
-              <img class="product-img" src="img/catalog/product-4.jpg" alt="Изображение товара">
-              <p class="rubik-title product-name">Селфи-палка «Следуй за мной»</p>
-              <p class="product-price">1500 &#8381;</p>
-            </a>
-          </li>
-
-        </ul>
-
-        <button class="load-more" type="button">Загрузить еще</button>
-
-        <div class="pages">
-
-          <button class="page-back-button">назад</button>
-
-          <ul class="list">
-            <li class="page-number">
-              <a class="link page-number-link" href="">1</a>
+            <li class="cards-item">
+              <a class="link product-page">
+                <img class="product-img" src="img/catalog/product-1.jpg" alt="Изображение товара">
+                <p class="rubik-title product-name">Любительская селфи-палка</p>
+                <p class="product-price">500 &#8381;</p>
+              </a>
             </li>
-            <li class="page-number">
-              <a class="link page-number-link" href="">2</a>
+            <li class="cards-item">
+              <a class="link product-page">
+                <img class="product-img" src="img/catalog/product-2.jpg" alt="Изображение товара">
+                <p class="rubik-title product-name">Профессиональная селфи-палка </p>
+                <p class="product-price">1500 &#8381;</p>
+              </a>
             </li>
-            <li class="page-number">
-              <a class="link page-number-link" href="">3</a>
+            <li class="cards-item">
+              <a class="link product-page">
+                <img class="product-img" src="img/catalog/product-3.jpg" alt="Изображение товара">
+                <p class="rubik-title product-name">Непотопляемая селфи-палка</p>
+                <p class="product-price">2500 &#8381;</p>
+              </a>
             </li>
-            <li class="page-number">
-              <a class="link page-number-link" href="">...</a>
+            <li class="cards-item">
+              <a class="link product-page">
+                <img class="product-img" src="img/catalog/product-4.jpg" alt="Изображение товара">
+                <p class="rubik-title product-name">Селфи-палка «Следуй за мной»</p>
+                <p class="product-price">1500 &#8381;</p>
+              </a>
             </li>
-            <li class="page-number">
-              <a class="link page-number-link" href="">15</a>
-            </li>
+
           </ul>
 
-          <button class="page-forward-button">вперед</button>
+          <button class="button load-more" type="button">Загрузить еще</button>
 
+          <div class="pages">
+
+            <button class="button page-back-button">назад</button>
+
+            <ul class="list">
+              <li class="page-number">
+                <a class="link page-number-link" href="">1</a>
+              </li>
+              <li class="page-number">
+                <a class="link page-number-link" href="">2</a>
+              </li>
+              <li class="page-number">
+                <a class="link page-number-link" href="">3</a>
+              </li>
+              <li class="page-number">
+                <a class="link page-number-link" href="">...</a>
+              </li>
+              <li class="page-number">
+                <a class="link page-number-link" href="">15</a>
+              </li>
+            </ul>
+
+            <button class="button page-forward-button">вперед</button>
+
+          </div>
         </div>
+      </section>
 
       </section>
 
@@ -336,7 +339,7 @@
 
     <footer class="footer">
 
-      <a class="link header-logo">
+      <a class="link header-logo" href="index.html">
 
         <svg width="145" height="36" viewBox="0 0 145 36" fill="#FFC700" xmlns="http://www.w3.org/2000/svg">
           <path

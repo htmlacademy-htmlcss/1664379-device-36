@@ -12,7 +12,7 @@
 
     <header class="page-header">
 
-      <a class="link header-logo">
+      <a class="link header-logo" tabindex="0">
 
         <svg width="145" height="36" viewBox="0 0 145 36" fill="black" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -166,7 +166,7 @@
                 камеру.</p>
             </div>
 
-            <a class="link title open-product-page" href="">Подробнее</a>
+            <a class="link button open-product-page" href="">Подробнее</a>
 
 
 
@@ -206,7 +206,7 @@
               <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
             </div>
 
-            <a class="link title open-product-page" href="">Подробнее</a>
+            <a class="link button open-product-page" href="">Подробнее</a>
 
             <table class="product-features">
               <tr class="features-table-row">
@@ -238,7 +238,7 @@
                 всего 5 кг.</p>
             </div>
 
-            <a class="link title open-product-page" href="">Подробнее</a>
+            <a class="link button open-product-page" href="">Подробнее</a>
 
             <table class="product-features">
               <tr class="features-table-row">
@@ -330,30 +330,41 @@
 
         <h2 class="visually-hidden">Услуги</h2>
 
-        <dl class="services-list">
-          <dt class="title">Доставка</dt>
-          <dd>
-            <p class="main-title">Доставка</p>
-            <p>Если из-за возгорания купленного у нас товара у вас
-            сгорит дом — не переживайте, мы выдадим вам новый.
-            Товар, не дом, конечно же.</p>
-          </dd>
-          <dt class="title">Гарантия</dt>
-          <dd>
-            <p class="main-title">Гарантия</p>
-            <p></p>Если из-за возгорания купленного у нас товара у вас
-            сгорит дом — не переживайте, мы выдадим вам новый.
-            Товар, не дом, конечно же.</p>
-          </dd>
-          <dt class="title">Кредит</dt>
-          <dd>
-            <p class="main-title">Кредит</p>
-            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
-              наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
-          </dd>
-        </dl>
+        <div class="services-wrapper">
 
-        <button class="title special-delivery" type="button">Доставим редкий товар под заказ</button>
+          <div class="services-button">
+            <button class="button">Доставка</button>
+            <button class="button">Гарантия</button>
+            <button class="button">Кредит</button>
+          </div>
+
+          <div class="services-info">
+
+            <div class="delivery">
+              <p class="main-title">Доставка</p>
+              <p>Если из-за возгорания купленного у нас товара у вас
+                сгорит дом — не переживайте, мы выдадим вам новый.
+                Товар, не дом, конечно же.</p>
+            </div>
+
+            <div class="warranty">
+              <p class="main-title">Гарантия</p>
+              <p></p>Если из-за возгорания купленного у нас товара у вас
+              сгорит дом — не переживайте, мы выдадим вам новый.
+              Товар, не дом, конечно же.</p>
+            </div>
+
+            <div class="loan">
+              <p class="main-title">Кредит</p>
+              <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
+                наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <button class="button special-delivery" type="button">Доставим редкий товар под заказ</button>
 
       </section>
 
@@ -374,7 +385,7 @@
             <li class="logistics-item">ТоксБерри</li>
           </ul>
 
-          <a class="link more-shop-info" href="blank.html">Подробнее о нас</a>
+          <a class="link button more-shop-info" href="blank.html">Подробнее о нас</a>
 
         </div>
 
@@ -404,7 +415,7 @@
 
           </div>
 
-          <button class="write-to-us" type="button">Напишите нам</button>
+          <a class="link button write-to-us" type="button">Напишите нам</a>
 
         </div>
 
@@ -421,7 +432,7 @@
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="get">
           <label class="visually-hidden" for="subsctibe-email">Ваш e-mail</label>
           <input id="subsctibe-email" placeholder="Ваш e-mail" name="subsctibe-email" type="email">
-          <button type="submit">Подписаться</button>
+          <button class="button" type="button submit">Подписаться</button>
         </form>
 
         <p class="subscribe-note">Это бесплатно</p>
@@ -432,7 +443,7 @@
 
     <footer class="footer">
 
-      <a class="link header-logo">
+      <a class="link header-logo" tabindex="0">
 
         <svg width="145" height="36" viewBox="0 0 145 36" fill="#FFC700" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -498,18 +509,18 @@
       <form class="pop-up-form" action="https://echo.htmlacademy.ru" method="post">
 
         <div class="pop-up-item">
-          <label class="rubik-title" for="name">Ваше имя:</label>
+          <label for="name">Ваше имя:</label>
           <input class="name" type="text" name="name" id="name" placeholder="Введите имя">
         </div>
 
         <div class="pop-up-item">
-          <label class="rubik-title" for="delivery-email">Ваш email:</label>
+          <label for="delivery-email">Ваш email:</label>
           <input class="delivery-email" type="text" name="delivery-email" id="delivery-email" placeholder="почта">
           <div class="email-error visually-hidden">Забавный у вас адрес</div>
         </div>
 
         <div class="pop-up-item">
-          <label class="rubik-title" for="special-delivery-name">Что нужно привезти</label>
+          <label for="special-delivery-name">Что нужно привезти</label>
           <textarea class="special-delivery-name" name="special-delivery-name" id="special-delivery-name"
             placeholder="В свободной форме"></textarea>
         </div>
@@ -527,7 +538,7 @@
 
         </div>
 
-        <button class="title pop-up-button" type="submit">Отправить</button>
+        <button class="button pop-up-button" type="submit">Отправить</button>
 
       </form>
 
