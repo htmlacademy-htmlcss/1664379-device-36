@@ -1,4 +1,5 @@
 /* Fonts*/
+
 @font-face {
   font-family: "raleway-800";
   src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
@@ -6,6 +7,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: "rubik-400";
   src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
@@ -13,6 +15,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: "rubik-700";
   src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
@@ -22,6 +25,7 @@
 }
 
 /*Variebles*/
+
 :root {
   --basic-white: #FFFFFF;
   --basic-black: #000000;
@@ -38,6 +42,7 @@
 }
 
 /*Global*/
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -57,7 +62,7 @@
   line-height: 30px;
 }
 
-/*ПОВТОРЯЮЩИЕСЯ ЭЛЕМЕНТЫ НА ВСЕХ СТРАНИЦЫХ*/
+/*ПОВТОРЯЮЩИЕСЯ ЭЛЕМЕНТЫ НА ВСЕХ СТРАНИЦАХ*/
 
 .link {
   text-decoration: none;
@@ -70,7 +75,7 @@
 
 .button {
   display: block;
-  font-family: "raleway-800";
+  font-family: "raleway-800", "Arial", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   border: none;
@@ -80,25 +85,25 @@
 /*ШРИФТЫ*/
 
 .main-title {
-  font-family: "raleway-800";
+  font-family: "raleway-800", "Arial", sans-serif;
   font-size: 50px;
   line-height: 50px;
 }
 
 .title {
-  font-family: "raleway-800";
+  font-family: "raleway-800", "Arial", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
 }
 
 .rubik-title {
-  font-family: "rubik-700";
+  font-family: "rubik-700", "Arial", sans-serif;
   font-weight: 700;
   font-size: 24px;
 }
 
 .slide-number {
-  font-family: "rubik-700";
+  font-family: "rubik-700", "Arial", sans-serif;
   font-weight: 700;
   font-size: 180px;
   line-height: 30px;
@@ -112,17 +117,19 @@
   font-size: 18px;
   line-height: 20px;
 }
+
 .filter .rubik-title {
   font-size: 18px;
   line-height: 20px;
 }
+
 .products-categories-list .title{
   text-transform: none;
   line-height: 24px;
 }
 
 .pop-up-form {
-  font-family: "rubik-700";
+  font-family: "rubik-700", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -140,43 +147,49 @@
   font-size: 36px;
 }
 
-
  /*BACKGROUND-COLORS*/
 
  .footer {
   background-color: var(--basic-dark);
  }
+
 .page-header {
   background-color: var(--basic-yellow-light);
 }
+
 .services-wrapper, .subscribe {
   background-color: var(--basic-gray-light);
 }
+
 .subscribe {
   background-color: var(--basic-gray-light);
 }
 .product-icon {
   background-color: var(--basic-yellow-light);
 }
+
 .main-catalog {
   background-color: var(--basic-gray-light);
 }
+
 .cards-list-wrapper {
   background-color: var(--basic-white);
 }
+
 .cart-content {
   background-color: var(--basic-black);
   color: var(--basic-white);
 }
+
 .cart-content-table {
   background-color: #1A1A1A;
 }
+
 .cart-content .button{
   background-color: var(--basic-white);
   color: var(--basic-black);
   font-stretch: 120%;
 }
-
 
 /*HEADER*/
 
@@ -186,31 +199,24 @@
   height: 36px;
 }
 
-
-
-
-
-
-
 /*MAIN*/
 
-
 /*FOOTER*/
+
  .footer {
   color: var(--basic-white);
  }
 
-
-
-
-
 /*СОСТОЯНИЯ*/
+
 .header-logo:hover {
   opacity: 60%;
 }
+
 .header-logo:active {
   opacity: 30%;
 }
+
 *:focus {
   outline: solid 2px var(--basic-focus);
 }
