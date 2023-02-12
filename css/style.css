@@ -56,10 +56,27 @@
   overflow: hidden;
 }
 
+html {
+  height: 100%;
+}
+
 .page-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
   font-family: "rubik-400", "Arial", sans-serif;
   font-size: 16px;
   line-height: 30px;
+}
+
+.main-conteiner {
+  flex-grow: 1;
+}
+
+.conteiner {
+  width: 1160px;
+  margin: 0 auto;
 }
 
 /*ПОВТОРЯЮЩИЕСЯ ЭЛЕМЕНТЫ НА ВСЕХ СТРАНИЦАХ*/
@@ -86,7 +103,7 @@
   border-top: 16px solid var(--basic-white);
   border-bottom: 16px solid var(--basic-white);
   background-color: var(--basic-yellow-light);
-  }
+}
 
 /*ШРИФТЫ*/
 
@@ -163,11 +180,7 @@
   background-color: var(--basic-yellow-light);
 }
 
-.services-wrapper,
-.subscribe {
-  background-color: var(--basic-gray-light);
-}
-
+.services,
 .subscribe {
   background-color: var(--basic-gray-light);
 }
@@ -201,7 +214,23 @@
 
 /*HEADER*/
 
+.page-header {
+  width: 1160px;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.page-header .conteiner {
+  width: 1040px;
+  display: grid;
+  grid-template-columns: 517px 1fr;
+  grid-template-rows: min-content min-content min-content;
+}
+
 .header-logo {
+  grid-column-start: 1;
+  grid-column-end: 3;
   display: block;
   width: 145px;
   height: 36px;
@@ -215,7 +244,50 @@
   border-radius: 20px;
   padding: 0;
   box-sizing: border-box;
-  margin: 15px;
+  margin: 30px 0;
+}
+
+.account-list {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
+.account-item {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 135px;
+}
+
+.nav-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.catalog-menu {
+  display: flex;
+  align-items: center;
+}
+.nav {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.nav-item {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.enter {
+  flex-grow: 1;
+  justify-content: flex-start;
+  margin-left: 53px;
 }
 
 .search-input,
@@ -244,7 +316,7 @@
 }
 
 .header-search::before {
-  position: relative;
+  position: absolute;
   content: url(../img/icons/search-icon.svg);
   display: block;
   width: 16px;
@@ -254,33 +326,30 @@
 }
 
 .login::before {
-  position: relative;
+  position: absolute;
   content: url(../img/icons/login-icon.svg);
   display: block;
   width: 13px;
   height: 12px;
-  top: 12px;
   left: -26px;
 }
 
 .compare::before {
-  position: relative;
+  position: absolute;
   content: url(../img/icons/compare-icon.svg);
   display: block;
   width: 10px;
   height: 12px;
-  top: 12px;
-  left: -22px;
+  left: 30px;
 }
 
 .cart::before {
-  position: relative;
+  position: absolute;
   content: url(../img/icons/cart-icon.svg);
   display: block;
   width: 16px;
   height: 14px;
-  top: 14px;
-  left: -28px;
+  left: 33px;
 }
 
 .delete-from-cart {
@@ -318,7 +387,8 @@
 
 /*MAIN*/
 
-.slide-back, .slide-forward {
+.slide-back,
+.slide-forward {
   width: 20px;
   height: 60px;
   border: none;
@@ -431,17 +501,17 @@
 }
 
 .services-button .current {
-width: 260px;
-background-color: var(--basic-black);
-border: none;
-color: var(--basic-yellow-light);
+  width: 260px;
+  background-color: var(--basic-black);
+  border: none;
+  color: var(--basic-yellow-light);
 }
 
 .special-delivery:hover::before {
   background-color: var(--basic-yellow-dark);
- }
+}
 
- .special-delivery:active {
+.special-delivery:active {
   background-color: var(--basic-gray-light);
   opacity: 30%;
- }
+}
