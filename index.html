@@ -204,7 +204,8 @@
               <div class="product-description">
 
                 <p class="main-title">Худеем<br>правильно!</p>
-                <p>Мотивирующие фитнес-браслеты помогут найти в себе силы<br>не пропускать занятия и соблюдать диету.</p>
+                <p>Мотивирующие фитнес-браслеты помогут найти в себе силы<br>не пропускать занятия и соблюдать диету.
+                </p>
 
                 <a class="link button open-product-page" href="">Подробнее</a>
 
@@ -298,27 +299,39 @@
 
           <ul class="list products-categories-list">
             <li class="products-categories-item">
-              <img class="product-icon" src="img/icons/vr-icon.svg" alt="" widtd="160" height="160">
+              <div class="product-icon-conteiner">
+                <img class="product-icon" src="img/icons/vr-icon.svg" alt="" widtd="97" height="55">
+              </div>
               <span class="title">Виртуальная реальность</span>
             </li>
             <li class="products-categories-item">
-              <img class="product-icon" src="img/icons/monopod-icon.svg" alt="" widtd="160" height="160">
+              <div class="product-icon-conteiner">
+                <img class="product-icon" src="img/icons/monopod-icon.svg" alt="" widtd="86" height="117">
+              </div>
               <span class="title">Моноподы для селфи</span>
             </li>
             <li class="products-categories-item">
-              <img class="product-icon" src="img/icons/camera-icon.svg" alt="" widtd="160" height="160">
+              <div class="product-icon-conteiner">
+                <img class="product-icon" src="img/icons/camera-icon.svg" alt="" widtd="71" height="87">
+              </div>
               <span class="title">Экшн-камеры</span>
             </li>
             <li class="products-categories-item">
-              <img class="product-icon" src="img/icons/fitness-icon.svg" alt="" widtd="160" height="160">
+              <div class="product-icon-conteiner">
+                <img class="product-icon" src="img/icons/fitness-icon.svg" alt="" widtd="107" height="65">
+              </div>
               <span class="title">Фитнес-браслеты</span>
             </li>
             <li class="products-categories-item">
-              <img class="product-icon" src="img/icons/smart-watch.svg" alt="" widtd="160" height="160">
+              <div class="product-icon-conteiner">
+                <img class="product-icon" src="img/icons/smart-watch.svg" alt="" widtd="56" height="98">
+              </div>
               <span class="title">Умные часы</span>
             </li>
             <li class="products-categories-item">
-              <img class="product-icon" src="img/icons/copter-icon.svg" alt="" widtd="160" height="160">
+              <div class="product-icon-conteiner">
+                <img class="product-icon" src="img/icons/copter-icon.svg" alt="" widtd="132" height="69">
+              </div>
               <span class="title">Квадрокоптеры</span>
             </li>
           </ul>
@@ -329,50 +342,58 @@
 
       <section class="services">
 
-        <div class="conteiner">
+        <h2 class="visually-hidden">Услуги</h2>
 
-          <h2 class="visually-hidden">Услуги</h2>
+        <div class="services-wrapper">
 
-          <div class="services-wrapper">
+          <div class="conteiner">
 
             <div class="services-button">
-              <button class="button current">Доставка</button>
-              <button class="button">Гарантия</button>
-              <button class="button">Кредит</button>
+              <div class="button-wrapper current">
+                <button class="button delivery">Доставка</button>
+              </div>
+              <div class="button-wrapper warranty">
+                <button class="button">Гарантия</button>
+              </div>
+              <div class="button-wrapper loan">
+                <button class="button">Кредит</button>
+              </div>
             </div>
 
-            <div class="services-info">
-
-              <div class="delivery">
+            <div class="services-info-wrapper delivery">
+              <div class="services-info">
                 <p class="main-title">Доставка</p>
-                <p>Мы с удовольствием доставим ваш товар прямо
+                <p class="services-text">Мы с удовольствием доставим ваш товар прямо
                   к вашему подъезду совершенно бесплатно! Ведь
                   мы неплохо заработаем, поднимая его на ваш этаж.</p>
-                <img src="img/icons/delivery-icon.svg" width="136" height="164" alt="">
               </div>
+              <img src="img/icons/delivery-icon.svg" width="136" height="164" alt="">
+            </div>
 
-              <div class="warranty">
-                <p class="main-title">Гарантия</p>
-                <p></p>Если из-за возгорания купленного у нас товара у вас
-                сгорит дом — не переживайте, мы выдадим вам новый.
-                Товар, не дом, конечно же.</p>
+            <div class="services-info-wrapper warranty visually-hidden">
+                <div class="services-info">
+                  <p class="main-title">Гарантия</p>
+                  <p class="services-text">Если из-за возгорания купленного у нас товара у вас
+                    сгорит дом — не переживайте, мы выдадим вам новый.
+                    Товар, не дом, конечно же.</p>
+                </div>
                 <img src="img/icons/warranty-icon.svg" width="171" height="195" alt="">
               </div>
 
-              <div class="loan">
-                <p class="main-title">Кредит</p>
-                <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
-                  наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+              <div class="services-info-wrapper loan visually-hidden">
+                <div class="services-info">
+                  <p class="main-title">Кредит</p>
+                  <p class="services-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
+                    наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+                </div>
                 <img src="img/icons/loan-icon.svg" width="156" height="188" alt="">
               </div>
 
-            </div>
-
           </div>
 
-          <button class="button special-delivery" type="button">Доставим редкий товар под заказ</button>
-
         </div>
+
+        <button class="button special-delivery" type="button">Доставим редкий товар под заказ</button>
 
       </section>
 
