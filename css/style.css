@@ -105,6 +105,11 @@ html {
   background-color: var(--basic-yellow-light);
 }
 
+.img {
+  margin: 0;
+  padding: 0;
+}
+
 /*ШРИФТЫ*/
 
 .main-title {
@@ -215,13 +220,21 @@ html {
 /*HEADER*/
 
 .page-header {
+  position: relative;
   width: 1160px;
   height: 300px;
   margin: 0 auto;
   margin-top: 40px;
 }
 
+.catalog .page-header {
+  height: 186px;
+}
+
 .page-header .conteiner {
+  position: absolute;
+  top: -20px;
+  left: 60px;
   width: 1040px;
   display: grid;
   grid-template-columns: 517px 1fr;
@@ -272,11 +285,21 @@ html {
 .catalog-menu {
   display: flex;
   align-items: center;
+  line-height: 21px;
+  letter-spacing: 0.2rem;
 }
+
+.catalog-menu-button {
+  margin-left: 21px;
+}
+
 .nav {
   margin-top: auto;
   margin-bottom: auto;
+  line-height: 21px;
+  letter-spacing: 0.2rem;
 }
+
 .nav-item {
   flex-grow: 1;
   display: flex;
@@ -288,6 +311,11 @@ html {
   flex-grow: 1;
   justify-content: flex-start;
   margin-left: 53px;
+}
+
+.logout {
+  margin-left: 28px;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .search-input,
@@ -387,6 +415,94 @@ html {
 
 /*MAIN*/
 
+/*.wrapper-trying {
+  position: relative;
+  display: flex;
+  height: 530px;
+
+}
+
+.hero-block h2 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+
+.slide-content {
+position: absolute;
+height: 530px;
+}
+
+.slide-control {
+  position: absolute;
+height: 530px;
+  z-index: 1;
+}
+}*/
+
+.slide-content {
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  top: -150px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  height: 560px;
+  outline: 2px solid tomato;
+}
+
+.product-description {
+  position: relative;
+  margin-left: 14px;
+}
+
+.product-description .main-title {
+  position: relative;
+  margin-top: 119px;
+  margin-bottom: 29px;
+  z-index: 2;
+}
+
+.open-product-page {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.product-features {
+  border-spacing: 20px 12px;
+  text-align: left;
+}
+
+.slide-number {
+  position: absolute;
+  top: -100px;
+  right: 60px;
+  color: var(--basic-white);
+}
+
+.slide-control {
+  height: 350px;
+  padding-top: 60px;
+}
+
+.slide-arrows {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+  width: 530px;
+}
+
+.slide-indicator {
+  display: flex;
+  justify-content: center;
+  padding-top: 277px;
+}
+
+.slide-indicator p {
+  margin: 0 10px;
+}
 .slide-back,
 .slide-forward {
   width: 20px;
@@ -469,7 +585,7 @@ html {
 
 *:focus {
   outline: solid 2px var(--basic-focus);
-  margin: 2px;
+  outline-offset: 2px;
 }
 
 .search-button:hover {
