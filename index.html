@@ -575,7 +575,7 @@
 
         <div class="pop-up-item">
           <label for="delivery-email">Ваш email:</label>
-          <input class="input-delivery-email" type="text" name="delivery-email" id="delivery-email" placeholder="почта">
+          <input class="input-delivery-email input-email-error" type="text" name="delivery-email" id="delivery-email" placeholder="почта">
           <div class="email-error">Забавный у вас адрес</div>
         </div>
 
@@ -589,11 +589,11 @@
 
           <label for="amount">Количество:</label>
           <div class="amount-wrapper">
-            <button class="amount-minus" aria-label="уменьшить">
+            <button type="button" class="amount-minus" aria-label="уменьшить">
               <img src="img/icons/pop-up-amount-minus.svg" alt="" width="16" height="2">
             </button>
             <input type="text" class="input-amount" id="amount" value="1">
-            <button class="amount-plus" aria-label="увеличить">
+            <button type="button" class="amount-plus" aria-label="увеличить">
               <img src="img/icons/pop-up-amount-plus.svg" alt="" width="16" height="16">
             </button>
           </div>
