@@ -204,6 +204,7 @@ html {
 
 .cards-list-wrapper {
   background-color: var(--basic-white);
+  min-height: 100%;
 }
 
 .cart-content {
@@ -1057,6 +1058,19 @@ html {
 
 
 /*CATALOG*/
+
+.main-catalog.main-conteiner {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+}
+
+.filter-conteiner .conteiner {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: 1fr;
+  min-height: 100%;
+ }
+
 
 .login {
   min-width: max-content;
