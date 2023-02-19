@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body class="page-body">
+  <body class="page-body catalog">
 
     <header class="page-header">
 
@@ -40,11 +40,10 @@
         </form>
 
         <ul class="list account-list">
-          <li class="account-item">
-            <a class="link login" href="">Коля Петухов</a>
-          </li>
-          <li class="account-item">
-            <a class="link logout hidden" href="">Выйти</a>
+
+          <li class="account-item enter">
+            <a class="link login" href="">Войти</a>
+            <a class="link logout" hidden href="">Выйти</a>
           </li>
           <li class="account-item">
             <a class="link compare" href="">Сравнить</a>
@@ -52,27 +51,32 @@
           <li class="account-item">
             <a class="link cart" href="">Корзина</a>
           </li>
+          
         </ul>
 
         <div class="cart-content visually-hidden">
 
           <div class="cart-product">
 
-            <img class="product-img" src="img/catalog/product-1.jpg" alt="" width="39" height="43">
+            <img class="cart-product-img" src="img/catalog/product-1.jpg" alt="" width="39" height="43">
 
-            <p class="product-name">Любительская селфи-палка</p>
+            <p class="cart-product-name">Любительская селфи-палка</p>
 
-            <button class="delete-from-cart" type="button" aria-label="Удалить"></button>
+            <button class="delete-from-cart" type="button" aria-label="Удалить">
+              <img src="img/icons/delete-from-cart.svg" width="10" height="10" alt="">
+            </button>
 
           </div>
 
           <div class="cart-product">
 
-            <img class="product-img" src="img/catalog/product-2.jpg" alt="" width="39" height="43">
+            <img class="cart-product-img" src="img/catalog/product-2.jpg" alt="" width="39" height="43">
 
-            <p class="product-name">Профессиональная селфи-палка</p>
+            <p class="cart-product-name">Профессиональная селфи-палка</p>
 
-            <button class="delete-from-cart" type="button" aria-label="Удалить"></button>
+            <button class="delete-from-cart" type="button" aria-label="Удалить">
+              <img src="img/icons/delete-from-cart.svg" width="10" height="10" alt="">
+            </button>
 
           </div>
 
@@ -89,29 +93,53 @@
           </table>
 
           <div class="to-open-cart">
+
             <a class="link button to-open-cart-link" href="">Открыть корзину</a>
+
           </div>
 
         </div>
 
         <div class="catalog-menu">
+
           <a class="link title catalog-ref" href="catalog.html">Каталог товаров</a>
-          <button class="catalog-menu-button" type="button" aria-label="Открыть каталог"></button>
-          <ul class="list catalog-list visually-hidden">
-            <li class="catalog-item">Виртуальная реальность</li>
-            <li class="catalog-item">Моноподы для селфи</li>
-            <li class="catalog-item">Экшн-камеры</li>
-            <li class="catalog-item">Фитнес-браслеты</li>
-            <li class="catalog-item">Умные часы</li>
-            <li class="catalog-item">Квадрокоптеры</li>
-          </ul>
-          
+
+          <button class="catalog-menu-button open-catalog" type="button" aria-label="Открыть каталог"></button>
+          <button class="catalog-menu-button close-catalog visually-hidden" type="button"
+            aria-label="Закрыть каталог"></button>
+
+            <ul class="list catalog-list">
+
+              <li>
+                <ul class="list first-list-group">
+                  <li class="catalog-item">
+                    <a class="link" href="blank.html">Виртуальная реальность</a>
+                  </li>
+                  <li class="catalog-item"><a class="link" href="blank.html">Моноподы для селфи</a></li>
+                  <li class="catalog-item"><a class="link current-item" href="blank.html">Экшн-камеры</a></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="list second-list-group">
+                  <li class="catalog-item"><a class="link" href="blank.html">Фитнес-браслеты</a></li>
+                  <li class="catalog-item"><a class="link" href="blank.html">мные часы</a></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="list fird-list-group">
+                  <li class="catalog-item"><a class="link" href="blank.html">Квадрокоптеры</a></li>
+                </ul>
+              </li>
+
+            </ul>
+
         </div>
 
         <nav class="nav header-nav title">
+
           <ul class="list nav-list">
             <li class="nav-item">
-              <a class="link delivery" href="blank.html">Доставка</a>
+              <a class="link delivery" href="">Доставка</a>
             </li>
             <li class="nav-item">
               <a class="link assurance" href="blank.html">Гарантия</a>
@@ -120,6 +148,7 @@
               <a class="link contacts" href="blank.html">Контакты</a>
             </li>
           </ul>
+
         </nav>
 
       </div>
@@ -130,7 +159,7 @@
 
       <div class="container">
 
-        <h1>Ожидание контента</h1>
+        <h1 class="">Ожидание контента</h1>
 
       </div>
 
@@ -159,41 +188,54 @@
 
         </a>
 
-        <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        <div class="footer-grid">
 
-        <nav class="nav footer-nav">
+          <p class="footer-adress">Санкт-Петербург, набережная<br>реки Карповки, 5, литера П.</p>
 
-          <ul class="list title nav-list">
-            <li class="nav-item">
-              <a class="link delivery" href="blank.html">Доставка</a>
+          <nav class="nav footer-nav">
+
+            <ul class="list title nav-list">
+              <li class="nav-item">
+                <a class="link delivery" href="blank.html">Доставка</a>
+              </li>
+              <li class="nav-item">
+                <a class="link assurance" href="blank.html">Гарантия</a>
+              </li>
+              <li class="nav-item">
+                <a class="link contacts" href="blank.html">Контакты</a>
+              </li>
+            </ul>
+
+          </nav>
+
+          <a class="link footer-tel" href="tel:+78128121212">Tel.: +7 (812) 812-12-12</a>
+
+          <ul class="list social-list">
+
+            <li class="social-item">
+              <a class="link" href="https://t.me/htmlacademy">
+                <img src="img/icons/telegram-icon.svg" width="14" height="12" alt="Telegram">
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="link assurance" href="blank.html">Гарантия</a>
+
+            <li class="social-item">
+              <a class="link" href="https://www.youtube.com/user/htmlacademyru">
+                <img src="img/icons/youtube-icon.svg" alt="Youtube">
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="link contacts" href="blank.html">Контакты</a>
+            <li class="social-item">
+              <a class="link" href="https://twitter.com/htmlacademy_ru">
+                <img src="img/icons/twetter-icon.svg" alt="Twitter">
+              </a>
             </li>
+
           </ul>
 
-        </nav>
+          <a class="link html-academy-logo" href="https://htmlacademy.ru/">
 
-        <a class="link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            <img src="img/html-academy-logo.svg" alt="Логотип html-academy"></a>
 
-        <ul class="list social-list">
-          <li class="social-item">
-            <a class="link" href="https://t.me/htmlacademy">Telegram</a>
-          </li>
-          <li class="social-item">
-            <a class="link" href="https://www.youtube.com/user/htmlacademyru">Youtube</a>
-          </li>
-          <li class="social-item">
-            <a class="link" href="https://twitter.com/htmlacademy_ru">Twitter</a>
-          </li>
-
-        </ul>
-
-        <a class="link html-academy-logo" href="https://htmlacademy.ru/">
-          <img src="img/html-academy-logo.svg" alt="Логотип html-academy"></a>
+        </div>
 
       </div>
 
