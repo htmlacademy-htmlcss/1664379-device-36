@@ -346,6 +346,19 @@ html {
   letter-spacing: 0.2rem;
 }
 
+.footer .nav-item {
+  box-sizing: border-box;
+  border-bottom: 2px solid transparent;
+}
+
+.footer .nav-item:hover {
+  color:var(--basic-yellow-dark);
+  border-bottom: 2px solid var(--basic-yellow-dark);
+}
+
+.footer .nav-item:active {
+ opacity: 30%;
+}
 .header-nav {
   margin-left: 50px;
 }
@@ -617,6 +630,9 @@ html {
 
 .products-categories-item {
   width: 160px;
+}
+.products-categories-item:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .product-icon-container {
@@ -911,6 +927,13 @@ html {
 .footer-tel {
   font-size: 16px;
   justify-self: end;
+  color: var(--basic-white);
+}
+.footer-tel:hover {
+  color: var(--basic-yellow-dark);
+}
+.footer-tel:active {
+  opacity: 20%;
 }
 
 .footer .nav-list {
@@ -923,8 +946,14 @@ html {
   grid-row-end: 3;
   grid-column-start: 3;
   grid-column-end: 4;
+  fill: var(--basic-yellow-dark);
 }
-
+.html-academy-logo:hover {
+  fill: var(--basic-white);
+}
+.html-academy-logo:active {
+  opacity: 40%;
+}
 .social-list {
   display: flex;
   gap: 15px;
@@ -1168,11 +1197,12 @@ html {
 }
 
 .social-item .link:hover {
-  opacity: 90%;
+  background-color: var(--basic-yellow-dark);
+  opacity: 100%;
 }
 
-.social-item .link:active {
-  opacity: 10%;
+.social-item:active img {
+  opacity: 30%;
 }
 
 .error {
@@ -1696,7 +1726,14 @@ html {
   display: flex;
   padding: 20px;
   padding-right: 20px;
+}
 
+.cart-product:hover {
+  opacity: 60%;
+}
+
+.cart-product:active {
+  opacity: 30%;
 }
 
 .cart-product-name {
@@ -1710,7 +1747,6 @@ html {
 .cart-content-table {
   padding: 5px 20px;
   font-size: 16px;
-
 }
 
 .cart-content-table tbody {
@@ -1718,6 +1754,7 @@ html {
   justify-content: space-between;
 }
 
+.to-open-cart-link,
 .to-open-cart {
   display: flex;
   justify-content: center;
@@ -1726,6 +1763,16 @@ html {
   height: 50px;
   margin: auto;
   background-color: var(--basic-white);
+}
+
+.to-open-cart-link:hover,
+.to-open-cart:hover {
+  background-color: var(--basic-yellow-light);
+}
+
+.to-open-cart-link:active,
+.to-open-cart:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .delete-from-cart {
