@@ -295,7 +295,9 @@ html {
 .page-header .nav-item:hover {
   opacity: 60%;
 }
-
+.catalog-menu:hover .title {
+  opacity: 60%;
+}
 .page-header .nav-item:active {
   opacity: 30%;
 }
@@ -631,7 +633,7 @@ html {
 .products-categories-item {
   width: 160px;
 }
-.products-categories-item:active {
+.products-categories-item:hover .title{
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -737,6 +739,11 @@ html {
   background-position: 50%;
   border-radius: 50%;
   right: 40px;
+  opacity: 50%;
+}
+
+.special-delivery:hover::after {
+  opacity: 100%;
 }
 
 .info .container {
@@ -1150,18 +1157,23 @@ html {
   opacity: 30%;
 }
 
-.current {
+.services-button .current-service {
   width: 280px;
   background-color: var(--basic-black);
+  border: none;
+  color: var(--basic-white);
 }
 
-.current .button {
+.current-service .button {
   background-color: transparent;
   border: none;
   color: var(--basic-yellow-light);
 }
 
-.services-button .current::after {
+.current-service:hover .button {
+  width: 280px;
+}
+.services-button .current-service::after {
   position: absolute;
   left: 100px;
   content: "";
@@ -1708,7 +1720,7 @@ html {
   right: -76px;
   width: 320px;
   height: 300px;
-  z-index: 3;
+  z-index: 5;
 }
 
 .cart-content::before {

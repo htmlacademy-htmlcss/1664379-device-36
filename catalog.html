@@ -10,6 +10,8 @@
 
   <body class="page-body catalog">
 
+    <!--HEADER-->
+
     <header class="page-header">
 
       <div class="container">
@@ -42,73 +44,72 @@
         <ul class="list account-list">
 
           <li class="account-item enter">
-            <a class="link login" href="blank.html">Войти</a>
+            <a class="link login" href="">Войти</a>
             <a class="link logout" hidden href="">Выйти</a>
           </li>
           <li class="account-item">
-            <a class="link compare" href="blank.html">Сравнить</a>
+            <a class="link compare" href="">Сравнить</a>
           </li>
           <li class="account-item">
-            <a class="link cart" href="blank.html">Корзина</a>
+            <a class="link cart" href="">Корзина</a>
           </li>
 
         </ul>
 
         <div class="cart-content visually-hidden">
 
-          <div class="cart-content">
+          <div class="cart-product">
 
-            <div class="cart-product">
+            <img class="cart-product-img" src="img/catalog/product-1.jpg" alt="" width="39" height="43">
 
-              <img class="cart-product-img" src="img/catalog/product-1.jpg" alt="" width="39" height="43">
+            <p class="cart-product-name">Любительская селфи-палка</p>
 
-              <p class="cart-product-name">Любительская селфи-палка</p>
-
-              <button class="delete-from-cart" type="button" aria-label="Удалить" tabindex="-1">
-                <img src="img/icons/delete-from-cart.svg" width="10" height="10" alt="" tabindex="0">
-              </button>
-
-            </div>
-
-            <div class="cart-product">
-
-              <img class="cart-product-img" src="img/catalog/product-2.jpg" alt="" width="39" height="43">
-
-              <p class="cart-product-name">Профессиональная селфи-палка</p>
-
-              <button class="delete-from-cart" type="button" aria-label="Удалить" tabindex="-1">
-                <img src="img/icons/delete-from-cart.svg" width="10" height="10" alt="" tabindex="0">
-              </button>
-
-            </div>
-
-            <table class="cart-content-table">
-              <tr class="cart-table-row">
-                <td class="cart-content-name">Товаров:</td>
-                <td class="cart-content-value">2</td>
-              </tr>
-
-              <tr class="card-table-row">
-                <td class="cart-content-name">Сумма:</td>
-                <td class="cart-content-value">2000 &#8381;</td>
-              </tr>
-            </table>
-
-            <div class="to-open-cart">
-
-              <a class="link button to-open-cart-link" href="">Открыть корзину</a>
-
-            </div>
+            <button class="delete-from-cart" type="button" aria-label="Удалить" tabindex="-1">
+              <img src="img/icons/delete-from-cart.svg" width="10" height="10" alt="" tabindex="0">
+            </button>
 
           </div>
 
-          <div class="catalog-menu">
+          <div class="cart-product">
 
-            <a class="link title catalog-ref" href="catalog.html">Каталог товаров</a>
+            <img class="cart-product-img" src="img/catalog/product-2.jpg" alt="" width="39" height="43">
 
-            <button class="catalog-menu-button open-catalog" type="button" aria-label="Открыть каталог"></button>
-            <button class="catalog-menu-button close-catalog visually-hidden" type="button"
-              aria-label="Закрыть каталог"></button>
+            <p class="cart-product-name">Профессиональная селфи-палка</p>
+
+            <button class="delete-from-cart" type="button" aria-label="Удалить" tabindex="-1">
+              <img src="img/icons/delete-from-cart.svg" width="10" height="10" alt="" tabindex="0">
+            </button>
+
+          </div>
+
+          <table class="cart-content-table">
+            <tr class="cart-table-row">
+              <td class="cart-content-name">Товаров:</td>
+              <td class="cart-content-value">2</td>
+            </tr>
+
+            <tr class="card-table-row">
+              <td class="cart-content-name">Сумма:</td>
+              <td class="cart-content-value">2000 &#8381;</td>
+            </tr>
+          </table>
+
+          <div class="to-open-cart">
+
+            <a class="link button to-open-cart-link" href="">Открыть корзину</a>
+
+          </div>
+
+        </div>
+
+        <div class="catalog-menu">
+
+          <div class="catalog-menu-focus" tabindex="0">
+
+            <a class="link title catalog-ref" href="" tabindex="-1">Каталог товаров</a>
+
+            <button class="catalog-menu-button open-catalog" type="button" aria-label="Открыть каталог" tabindex="-1"></button>
+            <button class="catalog-menu-button close-catalog visually-hidden" type="button" aria-label="Закрыть каталог" tabindex="-1"></button>
 
             <ul class="list catalog-list visually-hidden">
 
@@ -137,27 +138,31 @@
 
           </div>
 
-          <nav class="nav header-nav title">
-
-            <ul class="list nav-list">
-
-              <li class="nav-item">
-                <a class="link delivery" href="deliviry.html">Доставка</a>
-              </li>
-              <li class="nav-item">
-                <a class="link assurance" href="blank.html">Гарантия</a>
-              </li>
-              <li class="nav-item">
-                <a class="link contacts" href="blank.html">Контакты</a>
-              </li>
-
-            </ul>
-
-          </nav>
-
         </div>
 
+        <nav class="nav header-nav title">
+
+          <ul class="list nav-list">
+
+            <li class="nav-item">
+              <a class="link delivery" href="deliviry.html">Доставка</a>
+            </li>
+            <li class="nav-item">
+              <a class="link assurance" href="blank.html">Гарантия</a>
+            </li>
+            <li class="nav-item">
+              <a class="link contacts" href="blank.html">Контакты</a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+      </div>
+
     </header>
+
+    <!--MAIN-->
 
     <main class="main-catalog main-container">
 
