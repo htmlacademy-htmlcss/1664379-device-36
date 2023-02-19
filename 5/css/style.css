@@ -494,6 +494,8 @@ html {
   height: 60px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+  z-index: 2;
 }
 
 .slide-back {
@@ -1056,7 +1058,6 @@ html {
   outline-offset: 2px;
 }
 
-
 /*CATALOG*/
 
 .main-catalog.main-conteiner {
@@ -1069,8 +1070,7 @@ html {
   grid-template-columns: min-content 1fr;
   grid-template-rows: 1fr;
   min-height: 100%;
- }
-
+}
 
 .login {
   min-width: max-content;
@@ -1394,7 +1394,7 @@ html {
   align-items: center;
 }
 
-.product-img {
+.card-product-img {
   grid-column-start: 1;
   grid-column-end: 3;
 }
@@ -1430,10 +1430,12 @@ html {
   width: 760px;
   margin: 46px auto;
 }
+
 .page-move-button {
-padding: 25px;
-border: none;
+  padding: 25px;
+  border: none;
 }
+
 .pages {
   display: flex;
   justify-content: space-between;
@@ -1441,6 +1443,7 @@ border: none;
   margin: 0 auto;
   padding-bottom: 78px;
 }
+
 .pages .list {
   display: flex;
   padding: 0;
