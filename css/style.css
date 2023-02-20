@@ -1733,18 +1733,23 @@ html {
   left: 154px;
   transform: rotate(45deg);
 }
-
 .cart-product {
   display: flex;
   padding: 20px;
   padding-right: 20px;
 }
 
-.cart-product:hover {
+.cart-product-wrapper {
+  display: flex;
+}
+
+.delete-from-cart:hover,
+.cart-product-wrapper:hover {
   opacity: 60%;
 }
 
-.cart-product:active {
+.delete-from-cart:active,
+.cart-product-wrapper:active {
   opacity: 30%;
 }
 
