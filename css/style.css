@@ -101,11 +101,9 @@ html {
   text-transform: uppercase;
   box-sizing: border-box;
   border: none;
-  border-top: 16px solid var(--basic-white);
-  border-bottom: 16px solid var(--basic-white);
-  background-color: var(--basic-yellow-light);
   letter-spacing: 0.2rem;
   cursor: pointer;
+  background: linear-gradient(to top, transparent 18px, var(--basic-yellow-light) 18px, var(--basic-yellow-light) 25px, transparent 25px);
 }
 
 .img {
@@ -184,7 +182,6 @@ html {
 
 .page-header {
   background-color: var(--basic-yellow-light);
-
 }
 
 .services-wrapper,
@@ -219,7 +216,7 @@ html {
 }
 
 .cart-content .button {
-  background-color: var(--basic-white);
+  background: var(--basic-white);
   color: var(--basic-black);
   font-stretch: 120%;
 }
@@ -717,6 +714,7 @@ html {
   width: 1160px;
   height: 100px;
   border: none;
+  background: none;
   background-color: var(--basic-gray-light);
   padding: 0;
   margin: 70px auto 70px auto;
@@ -1158,7 +1156,7 @@ html {
 }
 
 .button:hover {
-  border: none;
+  background-color: var(--basic-yellow-light);
 }
 
 .button:active {
@@ -1178,7 +1176,7 @@ html {
 }
 
 .current-service .button {
-  background-color: transparent;
+  background: none;
   border: none;
   color: var(--basic-yellow-light);
 }
