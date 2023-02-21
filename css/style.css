@@ -65,6 +65,7 @@ html {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  min-width: 1160px;
   margin: 0;
   font-family: "rubik-400", "Arial", sans-serif;
   font-size: 18px;
@@ -183,6 +184,7 @@ html {
 
 .page-header {
   background-color: var(--basic-yellow-light);
+
 }
 
 .services-wrapper,
@@ -295,9 +297,11 @@ html {
 .page-header .nav-item:hover {
   opacity: 60%;
 }
+
 .catalog-menu:hover .title {
   opacity: 60%;
 }
+
 .page-header .nav-item:active {
   opacity: 30%;
 }
@@ -354,13 +358,14 @@ html {
 }
 
 .footer .nav-item:hover {
-  color:var(--basic-yellow-dark);
+  color: var(--basic-yellow-dark);
   border-bottom: 2px solid var(--basic-yellow-dark);
 }
 
 .footer .nav-item:active {
- opacity: 30%;
+  opacity: 30%;
 }
+
 .header-nav {
   margin-left: 50px;
 }
@@ -633,7 +638,8 @@ html {
 .products-categories-item {
   width: 160px;
 }
-.products-categories-item:hover .title{
+
+.products-categories-item:hover .title {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -846,6 +852,8 @@ html {
 }
 
 .subscribe-email {
+  font-family: inherit;
+  font-size: 18px;
   width: 560px;
   height: 57px;
   background-color: transparent;
@@ -936,9 +944,11 @@ html {
   justify-self: end;
   color: var(--basic-white);
 }
+
 .footer-tel:hover {
   color: var(--basic-yellow-dark);
 }
+
 .footer-tel:active {
   opacity: 20%;
 }
@@ -955,12 +965,15 @@ html {
   grid-column-end: 4;
   fill: var(--basic-yellow-dark);
 }
+
 .html-academy-logo:hover {
   fill: var(--basic-white);
 }
+
 .html-academy-logo:active {
   opacity: 40%;
 }
+
 .social-list {
   display: flex;
   gap: 15px;
@@ -1173,6 +1186,7 @@ html {
 .current-service:hover .button {
   width: 280px;
 }
+
 .services-button .current-service::after {
   position: absolute;
   left: 100px;
@@ -1733,6 +1747,7 @@ html {
   left: 154px;
   transform: rotate(45deg);
 }
+
 .cart-product {
   display: flex;
   padding: 20px;
