@@ -1665,8 +1665,7 @@ html {
   margin: 0 auto;
   font-size: 18px;
   letter-spacing: 0.2rem;
-  border-top: 16px solid var(--basic-gray-light);
-  border-bottom: 16px solid var(--basic-gray-light);
+  background: linear-gradient(to top, transparent 16px, var(--basic-yellow-light) 16px, var(--basic-yellow-light) 24px, transparent 24px);
 }
 
 .to-show-filter:hover {
@@ -1676,6 +1675,7 @@ html {
   font-size: 18px;
   letter-spacing: 0.2rem;
   border: none;
+  background: none;
   background-color: var(--basic-yellow-dark);
 }
 
@@ -1697,6 +1697,26 @@ html {
 .page-move-button {
   padding: 25px;
   border: none;
+}
+
+.page-move-button:hover {
+  background-color: rgba(220, 220, 220, 1);
+}
+
+.page-move-button:active {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.page-number {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.page-number:hover {
+  color: var(--basic-black);
+}
+
+.page-number:active {
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .pages {
