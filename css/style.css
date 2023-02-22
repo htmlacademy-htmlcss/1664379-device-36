@@ -1440,6 +1440,10 @@ html {
   opacity: 30%;
 }
 
+.checkbox-option + label{
+  user-select: none;
+}
+ /*старый чекбокс
 .input-checkbox:checked + label::after {
   content: url(../img/icons/checkbox.svg);
   position: absolute;
@@ -1447,6 +1451,20 @@ html {
   top: -1px;
   opacity: 1;
 }
+*/
+/* новый чекбакс*/
+.input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -30px;
+  width: 12px;
+  height: 12px;
+  background-image: url(../img/icons/checkbox.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+/*конец*/
 
 .input-checkbox:hover + label::before {
   opacity: 0.5;
@@ -1626,13 +1644,14 @@ html {
 .cards-item:hover .cards-more-button {
   position: absolute;
   top: 185px;
-  left: 103px;
+  left: 73px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "raleway-800", "Arial", sans-serif;
   text-transform: uppercase;
   box-sizing: border-box;
+  width: 220px;
   font-size: 18px;
   border: none;
   letter-spacing: 0.2rem;
@@ -1640,7 +1659,6 @@ html {
   background-color: var(--basic-yellow-light);
   cursor: pointer;
   box-shadow: 0 0 0 188px rgba(240, 240, 240, 0.8);
-
 }
 
 .cards-item:hover p {
