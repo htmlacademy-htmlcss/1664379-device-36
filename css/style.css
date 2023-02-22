@@ -1440,19 +1440,10 @@ html {
   opacity: 30%;
 }
 
-.checkbox-option + label{
+.checkbox-option + label {
   user-select: none;
 }
- /*старый чекбокс
-.input-checkbox:checked + label::after {
-  content: url(../img/icons/checkbox.svg);
-  position: absolute;
-  left: -30px;
-  top: -1px;
-  opacity: 1;
-}
-*/
-/* новый чекбакс*/
+
 .input-checkbox:checked + label::after {
   content: "";
   position: absolute;
@@ -1464,7 +1455,6 @@ html {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-/*конец*/
 
 .input-checkbox:hover + label::before {
   opacity: 0.5;
